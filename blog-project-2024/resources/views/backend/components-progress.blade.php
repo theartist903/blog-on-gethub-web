@@ -5,29 +5,29 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Components / List Group - NiceAdmin Bootstrap Template</title>
+  <title>Components / Progress - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('backend/assets/img/favicon.png') }}" rel="icon">
+  <link href="{{asset('backend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/quill/quill.snow.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/quill/quill.bubble.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/simple-datatables/style.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{asset('backend/assets/css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -45,7 +45,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="{{ asset('backend/assets/img/logo.png') }}" alt="">
         <span class="d-none d-lg-block">NiceAdmin</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -160,7 +160,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('backend/assets/img/messages-1.jpg') }}" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -174,7 +174,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('backend/assets/img/messages-2.jpg') }}" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -188,7 +188,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('backend/assets/img/messages-3.jpg') }}" alt="" class="rounded-circle">
                 <div>
                   <h4>David Muldon</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -211,7 +211,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="{{ asset('backend/assets/img/profile-img.jpg') }}" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -322,7 +322,7 @@
             </a>
           </li>
           <li>
-            <a href="components-list-group.html" class="active">
+            <a href="components-list-group.html">
               <i class="bi bi-circle"></i><span>List group</span>
             </a>
           </li>
@@ -342,7 +342,7 @@
             </a>
           </li>
           <li>
-            <a href="components-progress.html">
+            <a href="components-progress.html" class="active">
               <i class="bi bi-circle"></i><span>Progress</span>
             </a>
           </li>
@@ -509,12 +509,12 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>List Group</h1>
+      <h1>Progress</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Components</li>
-          <li class="breadcrumb-item active">List Group</li>
+          <li class="breadcrumb-item active">Progress</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -525,107 +525,66 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Default List Group</h5>
+              <h5 class="card-title">Default</h5>
 
-              <!-- Default List group -->
-              <ul class="list-group">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                <li class="list-group-item">A fourth item</li>
-                <li class="list-group-item">And a fifth one</li>
-              </ul><!-- End Default List group -->
-
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Links and buttons</h5>
-
-              <!-- List group with Links and buttons -->
-              <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-                  The current button
-                </button>
-                <button type="button" class="list-group-item list-group-item-action">A second item</button>
-                <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-                <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-                <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
-              </div><!-- End List group with Links and buttons -->
+              <!-- Default Progress Bars-->
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><!-- End Default Progress Bars-->
 
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">With Icons</h5>
+              <h5 class="card-title">Labels</h5>
 
-              <!-- List group With Icons -->
-              <ul class="list-group">
-                <li class="list-group-item"><i class="bi bi-star me-1 text-success"></i> An item</li>
-                <li class="list-group-item"><i class="bi bi-collection me-1 text-primary"></i> A second item</li>
-                <li class="list-group-item"><i class="bi bi-check-circle me-1 text-danger"></i> A third item</li>
-                <li class="list-group-item"><i class="bi bi-exclamation-octagon me-1 text-warning"></i> A fourth item</li>
-              </ul><!-- End List group With Icons -->
-
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Numbered</h5>
-
-              <!-- List group Numbered -->
-              <ol class="list-group list-group-numbered">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Cras justo odio</li>
-              </ol><!-- End List group Numbered -->
+              <!-- Progress Bars with labels-->
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div><!-- End Progress Bars with labels -->
 
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">With badges</h5>
+              <h5 class="card-title">Backgrounds</h5>
 
-              <!-- List group With badges -->
-              <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  A list item
-                  <span class="badge bg-primary rounded-pill">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  A second list item
-                  <span class="badge bg-primary rounded-pill">2</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  A third list item
-                  <span class="badge bg-primary rounded-pill">1</span>
-                </li>
-              </ul><!-- End List With badges -->
-
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">With Contextual Classes</h5>
-
-              <!-- List group With Contextual classes -->
-              <ul class="list-group">
-                <li class="list-group-item">A simple default list group item</li>
-
-                <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
-                <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
-                <li class="list-group-item list-group-item-success">A simple success list group item</li>
-                <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
-                <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
-                <li class="list-group-item list-group-item-info">A simple info list group item</li>
-                <li class="list-group-item list-group-item-light">A simple light list group item</li>
-                <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
-              </ul><!-- End List Group With Contextual classes -->
+              <!-- Progress Bars with Backgrounds-->
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><!-- End Progress Bars with Backgrounds -->
 
             </div>
           </div>
@@ -636,137 +595,75 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">With active and disabled items</h5>
+              <h5 class="card-title">Height</h5>
+              <p>We only set a height value on the .progress, so if you change that value the inner .progress-bar will automatically resize accordingl</p>
 
-              <!-- List group with active and disabled items -->
-              <ul class="list-group">
-                <li class="list-group-item active" aria-current="true">An active item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                <li class="list-group-item">A fourth item</li>
-                <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
-              </ul><!-- End ist group with active and disabled items -->
-
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Clean list group</h5>
-              <p>Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
-
-              <!-- List group with active and disabled items -->
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                <li class="list-group-item">A fourth item</li>
-                <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
-              </ul><!-- End Clean list group -->
+              <!-- Progress Bars with heights-->
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3" style="height: 15px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3" style="height: 20px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3" style="height: 25px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><!-- End Progress Bars with heights -->
 
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">With custom content</h5>
+              <h5 class="card-title">Striped Backgrounds</h5>
 
-              <!-- List group with custom content -->
-              <ol class="list-group list-group-numbered">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">Subheading</div>
-                    Cras justo odio
-                  </div>
-                  <span class="badge bg-primary rounded-pill">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">Subheading</div>
-                    Cras justo odio
-                  </div>
-                  <span class="badge bg-primary rounded-pill">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">Subheading</div>
-                    Cras justo odio
-                  </div>
-                  <span class="badge bg-primary rounded-pill">14</span>
-                </li>
-              </ol><!-- End with custom content -->
+              <!-- Progress Bars with Striped Backgrounds-->
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><!-- End Progress Bars with Striped Backgrounds -->
 
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Advanced Content</h5>
+              <h5 class="card-title">Striped Animated Backgrounds</h5>
 
-              <!-- List group with Advanced Contents -->
-              <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small>3 days ago</small>
-                  </div>
-                  <p class="mb-1">Some placeholder content in a paragraph.</p>
-                  <small>And some small print.</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1">Some placeholder content in a paragraph.</p>
-                  <small class="text-muted">And some muted small print.</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1">Some placeholder content in a paragraph.</p>
-                  <small class="text-muted">And some muted small print.</small>
-                </a>
-              </div><!-- End List group Advanced Content -->
-
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">With Checkboxes and radios</h5>
-
-              <!-- List group With Checkboxes and radios -->
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                  First checkbox
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                  Second checkbox
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                  Third checkbox
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                  Fourth checkbox
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                  Fifth checkbox
-                </li>
-              </ul><!-- End List Checkboxes and radios -->
+              <!-- Progress Bars with Striped Backgrounds-->
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><!-- End Progress Bars with Striped Animated Backgrounds -->
 
             </div>
           </div>
 
         </div>
-
       </div>
     </section>
 
@@ -789,17 +686,17 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{ asset('backend/assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/chart.js/chart.umd.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/echarts/echarts.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/quill/quill.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/simple-datatables/simple-datatables.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/tinymce/tinymce.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('backend/assets/js/main.js') }}"></script>
 
 </body>
 

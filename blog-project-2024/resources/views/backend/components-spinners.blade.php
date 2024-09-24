@@ -5,29 +5,30 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Components / Progress - NiceAdmin Bootstrap Template</title>
+  <title>Components / Spinners - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ asset('backend/assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ asset('backend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/quill/quill.snow.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/quill/quill.bubble.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/simple-datatables/style.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset('backend/assets/css/style.css') }}" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -45,7 +46,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="{{ asset('backend/assets/img/logo.png') }}" alt="">
         <span class="d-none d-lg-block">NiceAdmin</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -160,7 +161,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('backend/assets/img/messages-1.jpg') }}" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -174,7 +175,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('backend/assets/img/messages-2.jpg') }}" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -188,7 +189,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('backend/assets/img/messages-3.jpg') }}" alt="" class="rounded-circle">
                 <div>
                   <h4>David Muldon</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -211,7 +212,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="{{ asset('backend/assets/img/profile-img.jpg') }}" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -342,12 +343,12 @@
             </a>
           </li>
           <li>
-            <a href="components-progress.html" class="active">
+            <a href="components-progress.html">
               <i class="bi bi-circle"></i><span>Progress</span>
             </a>
           </li>
           <li>
-            <a href="components-spinners.html">
+            <a href="components-spinners.html" class="active">
               <i class="bi bi-circle"></i><span>Spinners</span>
             </a>
           </li>
@@ -509,12 +510,12 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Progress</h1>
+      <h1>Spinners</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Components</li>
-          <li class="breadcrumb-item active">Progress</li>
+          <li class="breadcrumb-item active">Spinners</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -525,66 +526,89 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Default</h5>
+              <h5 class="card-title">Border spinner</h5>
+              <p>Use the border spinners for a lightweight loading indicator.</p>
 
-              <!-- Default Progress Bars-->
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3">
-                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3">
-                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3">
-                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div><!-- End Default Progress Bars-->
+              <!-- Border spinner -->
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div><!-- End Border spinner -->
 
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Labels</h5>
+              <h5 class="card-title">Colors</h5>
 
-              <!-- Progress Bars with labels-->
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              <!-- Color spinners -->
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              <div class="spinner-border text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-              </div><!-- End Progress Bars with labels -->
+              <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div><!-- End Color spinners -->
 
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Backgrounds</h5>
+              <h5 class="card-title">Alignment</h5>
+              <p>Use flexbox utilities, float utilities, or text alignment utilities to place spinners exactly where you need them in any situation.</p>
 
-              <!-- Progress Bars with Backgrounds-->
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div><!-- End Progress Bars with Backgrounds -->
+              <!-- Center aligned spinner -->
+              <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div><!-- End Center aligned spinner -->
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Buttons</h5>
+              <p>Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.</p>
+
+              <!-- Button spinners -->
+              <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <span class="visually-hidden">Loading...</span>
+              </button>
+              <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+
+              <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                <span class="visually-hidden">Loading...</span>
+              </button>
+              <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+              <!-- End Button spinners -->
 
             </div>
           </div>
@@ -595,70 +619,88 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Height</h5>
-              <p>We only set a height value on the .progress, so if you change that value the inner .progress-bar will automatically resize accordingl</p>
+              <h5 class="card-title">Growing spinner</h5>
+              <p>If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!</p>
 
-              <!-- Progress Bars with heights-->
-              <div class="progress" style="height: 10px;">
-                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3" style="height: 15px;">
-                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress mt-3" style="height: 25px;">
-                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div><!-- End Progress Bars with heights -->
+              <!-- Growing spinner -->
+              <div class="spinner-grow" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div><!-- End Growing spinner -->
 
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Striped Backgrounds</h5>
+              <h5 class="card-title">Growing Color spinners</h5>
 
-              <!-- Progress Bars with Striped Backgrounds-->
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              <!-- Growing Color spinnersr -->
+              <div class="spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="spinner-grow text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div><!-- End Progress Bars with Striped Backgrounds -->
+              <div class="spinner-grow text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div><!-- End Growing Color spinners -->
 
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Striped Animated Backgrounds</h5>
+              <h5 class="card-title">Sizes</h5>
+              <p>Add <code>.spinner-border-sm</code> and <code>.spinner-grow-sm</code> to make a smaller spinner that can quickly be used within other components. Or, use custom CSS or inline styles to change the dimensions as needed.</p>
 
-              <!-- Progress Bars with Striped Backgrounds-->
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              <!-- Sized spinners -->
+              <div class="spinner-border spinner-border-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+
+              <div class="spinner-border" style="width: 30px; height: 30px;" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              <div class="spinner-border" style="width: 40px; height: 40px;" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+
+              <div class="spinner-border" style="width: 50px; height: 50px;" role="status">
+                <span class="visually-hidden">Loading...</span>
               </div>
-              <div class="progress mt-3">
-                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div><!-- End Progress Bars with Striped Animated Backgrounds -->
+
+              <div class="spinner-grow spinner-grow-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+
+              <div class="spinner-grow" style="width: 30px; height: 30px;" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+
+              <div class="spinner-grow" style="width: 40px; height: 40px;" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+
+              <div class="spinner-grow" style="width: 50px; height: 50px;" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <!-- End Sized spinners -->
 
             </div>
           </div>
@@ -686,17 +728,18 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{ asset('backend/assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/chart.js/chart.umd.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/echarts/echarts.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/quill/quill.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/simple-datatables/simple-datatables.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/tinymce/tinymce.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('backend/assets/js/main.js') }}"></script>
+
 
 </body>
 
