@@ -6,6 +6,7 @@ Route::get('/', function () {
     return view('frontend/index');
 });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 
 Route::get('/charts-apexcharts', function () {
@@ -37,10 +38,13 @@ Route::get('/components-carousel', function () {
 })->name('components.carousel');
 
 // ===================================================================
+=======
+>>>>>>> Stashed changes
 
 Route::get('frontend-about', function () {
     return view('frontend/about');
 });
+<<<<<<< Updated upstream
 
 
 Route::get('frontend-category', function () {
@@ -66,4 +70,6 @@ Route::get('frontend-index', function () {
     return view('frontend/index');
 });
 
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
