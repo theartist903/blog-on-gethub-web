@@ -5,29 +5,29 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Components / Badges - NiceAdmin Bootstrap Template</title>
+  <title>Components / Alerts - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ asset('backend/assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ asset('backend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/quill/quill.snow.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/quill/quill.bubble.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ asset('backend/assets/vendor/simple-datatables/style.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset('backend/assets/css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -45,7 +45,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="{{ asset('backend/assets/img/logo.png') }}" alt="">
         <span class="d-none d-lg-block">NiceAdmin</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -160,7 +160,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('backend/assets/img/messages-1.jpg') }}" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -174,7 +174,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('backend/assets/img/messages-2.jpg') }}" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -188,7 +188,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('backend/assets/img/messages-3.jpg') }}" alt="" class="rounded-circle">
                 <div>
                   <h4>David Muldon</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -211,7 +211,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="{{ asset('backend/assets/img/profile-img.jpg') }}" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -287,7 +287,7 @@
         </a>
         <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="components-alerts.html">
+            <a href="components-alerts.html" class="active">
               <i class="bi bi-circle"></i><span>Alerts</span>
             </a>
           </li>
@@ -297,7 +297,7 @@
             </a>
           </li>
           <li>
-            <a href="components-badges.html" class="active">
+            <a href="components-badges.html">
               <i class="bi bi-circle"></i><span>Badges</span>
             </a>
           </li>
@@ -509,63 +509,163 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Badges</h1>
+      <h1>Alerts</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Components</li>
-          <li class="breadcrumb-item active">Badges</li>
+          <li class="breadcrumb-item active">Alerts</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section">
       <div class="row">
-
         <div class="col-lg-6">
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Default Badges</h5>
 
-              <span class="badge bg-primary">Primary</span>
-              <span class="badge bg-secondary">Secondary</span>
-              <span class="badge bg-success">Success</span>
-              <span class="badge bg-danger">Danger</span>
-              <span class="badge bg-warning text-dark">Warning</span>
-              <span class="badge bg-info text-dark">Info</span>
-              <span class="badge bg-light text-dark">Light</span>
-              <span class="badge bg-dark">Dark</span>
+              <h5 class="card-title">Default</h5>
+
+              <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                A simple primary alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                A simple secondary alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                A simple success alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                A simple danger alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                A simple warning alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-info alert-dismissible fade show" role="alert">
+                A simple info alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-light border-light alert-dismissible fade show" role="alert">
+                A simple light alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                A simple dark alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
             </div>
-          </div><!-- End Default Badges -->
+          </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Pill Badges</h5>
-              <span class="badge rounded-pill bg-primary">Primary</span>
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
-              <span class="badge rounded-pill bg-success">Success</span>
-              <span class="badge rounded-pill bg-danger">Danger</span>
-              <span class="badge rounded-pill bg-warning text-dark">Warning</span>
-              <span class="badge rounded-pill bg-info text-dark">Info</span>
-              <span class="badge rounded-pill bg-light text-dark">Light</span>
-              <span class="badge rounded-pill bg-dark">Dark</span>
+              <h5 class="card-title">With Icon</h5>
+
+              <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <i class="bi bi-star me-1"></i>
+                A simple primary alert with icon—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                <i class="bi bi-collection me-1"></i>
+                A simple secondary alert with icon—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle me-1"></i>
+                A simple success alert with icon—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="bi bi-exclamation-octagon me-1"></i>
+                A simple danger alert with icon—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <i class="bi bi-exclamation-triangle me-1"></i>
+                A simple warning alert with icon—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <i class="bi bi-info-circle me-1"></i>
+                A simple info alert with icon—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                <i class="bi bi-folder me-1"></i>
+                A simple dark alert with icon—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
             </div>
-          </div><!-- End Pill Badges -->
+          </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Icon Badges</h5>
-              <span class="badge bg-primary"><i class="bi bi-star me-1"></i> Primary</span>
-              <span class="badge bg-secondary"><i class="bi bi-collection me-1"></i> Secondary</span>
-              <span class="badge bg-success"><i class="bi bi-check-circle me-1"></i> Success</span>
-              <span class="badge bg-danger"><i class="bi bi-exclamation-octagon me-1"></i> Danger</span>
-              <span class="badge bg-warning text-dark"><i class="bi bi-exclamation-triangle me-1"></i> Warning</span>
-              <span class="badge bg-info text-dark"><i class="bi bi-info-circle me-1"></i> Info</span>
-              <span class="badge bg-light text-dark"><i class="bi bi-star me-1"></i> Light</span>
-              <span class="badge bg-dark"><i class="bi bi-folder me-1"></i> Dark</span>
+              <h5 class="card-title">Outlined</h5>
+
+              <div class="alert border-primary alert-dismissible fade show" role="alert">
+                A simple primary outlined alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-secondary alert-dismissible fade show" role="alert">
+                A simple secondary outlined alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-success alert-dismissible fade show" role="alert">
+                A simple success outlined alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-danger alert-dismissible fade show" role="alert">
+                A simple danger outlined alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-warning alert-dismissible fade show" role="alert">
+                A simple warning outlined alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-info alert-dismissible fade show" role="alert">
+                A simple info outlined alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-light alert-dismissible fade show" role="alert">
+                A simple light outlined alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert border-dark alert-dismissible fade show" role="alert">
+                A simple dark outlined alert—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
             </div>
-          </div><!-- End Icon Badges -->
+          </div>
 
         </div>
 
@@ -573,64 +673,122 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Border Badges</h5>
-              <span class="badge border-primary border-1 text-primary">Primary</span>
-              <span class="badge border-secondary border-1 text-secondary">Secondary</span>
-              <span class="badge border-success border-1 text-success">Success</span>
-              <span class="badge border-danger border-1 text-danger">Danger</span>
-              <span class="badge border-warning border-1 text-warning">Warning</span>
-              <span class="badge border-info border-1 text-info">Info</span>
-              <span class="badge border-light border-1 text-black-50">Light</span>
-              <span class="badge border-dark border-1 text-dark">Dark</span>
+              <h5 class="card-title">Default Solid Color</h5>
+
+              <div class="alert alert-primary bg-primary text-light border-0 alert-dismissible fade show" role="alert">
+                A simple primary alert with solid color—check it out!
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-secondary bg-secondary text-light border-0 alert-dismissible fade show" role="alert">
+                A simple secondary alert with solid color—check it out!
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-success bg-success text-light border-0 alert-dismissible fade show" role="alert">
+                A simple success alert with solid color—check it out!
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
+                A simple danger alert with solid color—check it out!
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-warning bg-warning border-0 alert-dismissible fade show" role="alert">
+                A simple warning alert with solid color—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-info bg-info border-0 alert-dismissible fade show" role="alert">
+                A simple info alert with solid color—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-light bg-light border-0 alert-dismissible fade show" role="alert">
+                A simple light alert with solid color—check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                A simple dark alert with solid color—check it out!
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
             </div>
-          </div><!-- End Border Badges -->
+          </div>
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Button Badges</h5>
+              <h5 class="card-title">With Heading &amp Separator</h5>
 
-              <button type="button" class="btn btn-primary mb-2">
-                Primary <span class="badge bg-white text-primary">4</span>
-              </button>
-              <button type="button" class="btn btn-secondary mb-2">
-                Secondary <span class="badge bg-white text-secondary">4</span>
-              </button>
-              <button type="button" class="btn btn-success mb-2">
-                Success <span class="badge bg-white text-success">4</span>
-              </button>
-              <button type="button" class="btn btn-danger mb-2">
-                Danger <span class="badge bg-white text-danger">4</span>
-              </button>
-              <button type="button" class="btn btn-warning mb-2">
-                Warning <span class="badge bg-white text-warning">4</span>
-              </button>
-              <button type="button" class="btn btn-info mb-2">
-                Info <span class="badge bg-white text-info">4</span>
-              </button>
-              <button type="button" class="btn btn-light mb-2">
-                Light <span class="badge bg-secondary text-light">4</span>
-              </button>
-              <button type="button" class="btn btn-dark mb-2">
-                Dark <span class="badge bg-white text-dark">4</span>
-              </button>
+              <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Primary Heading</h4>
+                <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                <hr>
+                <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Secondary Heading</h4>
+                <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                <hr>
+                <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Success Heading</h4>
+                <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                <hr>
+                <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Danger Heading</h4>
+                <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                <hr>
+                <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-warning  alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Warning Heading</h4>
+                <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                <hr>
+                <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-info  alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Info Heading</h4>
+                <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                <hr>
+                <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-light border-light alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Lignt Heading</h4>
+                <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                <hr>
+                <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="alert alert-dark  alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Dark Heading</h4>
+                <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                <hr>
+                <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
             </div>
-          </div><!-- End Button Badges -->
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Heading Badges</h5>
-
-              <h1>Example h1 heading <span class="badge bg-primary">Primary</span></h1>
-              <h2>Example h2 heading <span class="badge bg-secondary">Secondary</span></h2>
-              <h3>Example h3 heading <span class="badge bg-success">Success</span></h3>
-              <h4>Example h4 heading <span class="badge bg-danger">Danger</span></h4>
-              <h5>Example h5 heading <span class="badge bg-warning">Warning</span></h5>
-              <h6>Example h6 heading <span class="badge bg-info">Info</span></h6>
-            </div>
-          </div><!-- End Heading Badges -->
-
+          </div>
         </div>
-
       </div>
     </section>
 
@@ -653,17 +811,17 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{ asset('backend/assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/chart.js/chart.umd.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/echarts/echarts.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/quill/quill.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/simple-datatables/simple-datatables.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/tinymce/tinymce.min.js') }}"></script>
+  <script src="{{ asset('backend/assets/vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('backend/assets/js/main.js') }}"></script>
 
 </body>
 
