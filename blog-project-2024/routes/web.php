@@ -6,6 +6,7 @@ Route::get('/', function () {
     return view('frontend/index');
 });
 
+<<<<<<< Updated upstream
 Route::get('/charts-apexcharts', function () {
     return view('backend/charts-apexcharts');
 })->name('charts.apexcharts');
@@ -34,3 +35,27 @@ Route::get('/components-carousel', function () {
     return view('backend/components-carousel');
 })->name('components.carousel');
 
+=======
+
+Route::get('frontend-about', function () {
+    return view('frontend/about');
+});
+
+
+Route::get('frontend-category', function () {
+    return view('frontend/category');
+});
+
+Route::get('frontend-contact', function () {
+    return view('frontend/contact');
+});
+
+Route::get('frontend-search', function () {
+    return view('frontend/search');
+});
+
+
+Route::get('frontend-single-post', function () {
+    return view('frontend/single-post');
+});
+>>>>>>> Stashed changes
