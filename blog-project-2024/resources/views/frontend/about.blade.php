@@ -190,25 +190,25 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime, adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident inventore? Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus aut!</p>
           </div>
           <div class="col-lg-4 text-center mb-5">
-            <img src="assets/img/person-3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-4">
+            <img src="{{asset('frontend/assets/img/person-3.jpg')}}" alt="" class="img-fluid rounded-circle w-50 mb-4">
             <h4>Jane Cooper</h4>
             <span class="d-block mb-3 text-uppercase">Editor Staff</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime, adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident inventore? Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus aut!</p>
           </div>
           <div class="col-lg-4 text-center mb-5">
-            <img src="assets/img/person-4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-4">
+            <img src="{{asset('frontend/assets/img/person-4.jpg')}}" alt="" class="img-fluid rounded-circle w-50 mb-4">
             <h4>Cameron Williamson</h4>
             <span class="d-block mb-3 text-uppercase">Editor Staff</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime, adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident inventore? Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus aut!</p>
           </div>
           <div class="col-lg-4 text-center mb-5">
-            <img src="assets/img/person-5.jpg" alt="" class="img-fluid rounded-circle w-50 mb-4">
+            <img src="{{asset('frontend/assets/img/person-5.jpg')}}" alt="" class="img-fluid rounded-circle w-50 mb-4">
             <h4>Cameron Williamson</h4>
             <span class="d-block mb-3 text-uppercase">Editor Staff</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime, adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident inventore? Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus aut!</p>
           </div>
           <div class="col-lg-4 text-center mb-5">
-            <img src="assets/img/person-6.jpg" alt="" class="img-fluid rounded-circle w-50 mb-4">
+            <img src="{{asset('frontend/assets/img/person-6.jpg')}}" alt="" class="img-fluid rounded-circle w-50 mb-4">
             <h4>Cameron Williamson</h4>
             <span class="d-block mb-3 text-uppercase">Editor Staff</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime, adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident inventore? Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus aut!</p>
@@ -263,7 +263,7 @@
             <ul class="footer-links footer-blog-entry list-unstyled">
               <li>
                 <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-1.jpg" alt="" class="img-fluid me-3">
+                  <img src="{{asset('frontend/assets/img/post-sq-1.jpg')}}" alt="" class="img-fluid me-3">
                   <div>
                     <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                     <span>5 Great Startup Tips for Female Founders</span>
@@ -273,7 +273,7 @@
 
               <li>
                 <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-2.jpg" alt="" class="img-fluid me-3">
+                  <img src="{{asset('frontend/assets/img/post-sq-2.jpg')}}" alt="" class="img-fluid me-3">
                   <div>
                     <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                     <span>What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</span>
@@ -283,7 +283,7 @@
 
               <li>
                 <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-3.jpg" alt="" class="img-fluid me-3">
+                  <img src="{{asset('frontend/assets/img/post-sq-3.jpg')}}" alt="" class="img-fluid me-3">
                   <div>
                     <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                     <span>Life Insurance And Pregnancy: A Working Mom’s Guide</span>
@@ -293,7 +293,7 @@
 
               <li>
                 <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-4.jpg" alt="" class="img-fluid me-3">
+                  <img src="{{asset('frontend/assets/img/post-sq-4.jpg')}}" alt="" class="img-fluid me-3">
                   <div>
                     <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                     <span>How to Avoid Distraction and Stay Focused During Video Calls?</span>
@@ -348,14 +348,14 @@
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/php-email-form/validate.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 
 </body>
 

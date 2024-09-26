@@ -5,9 +5,93 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend/index');
 });
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
+
+
+
+Route::get('components_list_group', function () {
+    return view('backend/components-list-group');
+});
+
+Route::get('components_modal', function () {
+    return view('backend/components-modal');
+});
+
+Route::get('components_pagination', function () {
+    return view('backend/components-pagination');
+});
+
+Route::get('components_progress', function () {
+    return view('backend/components-progress');
+});
+
+Route::get('components_spinners', function () {
+    return view('backend/components-spinners');
+});
+
+Route::get('components_tabs', function () {
+    return view('backend/components-tabs');
+});
+
+Route::get('components_tooltips', function () {
+    return view('backend/components-tooltips');
+});
+
+Route::get('forms_editors', function () {
+    return view('backend/forms-editors');
+});
+
+Route::get('forms_elements', function () {
+    return view('backend/forms-elements');
+});
+
+
+Route::get('forms_layouts', function () {
+    return view('backend/forms-layouts');
+});
+
+
+
+
+Route::get('/forms-validation', function () {
+    return view('backend.forms-validation');
+});
+
+Route::get('/icons-bootstrap', function () {
+    return view('backend.icons-bootstrap');
+});
+
+Route::get('/icons-boxicons', function () {
+    return view('backend.icons-boxicons');
+});
+
+Route::get('/icons-remix', function () {
+    return view('backend.icons-remix');
+});
+
+Route::get('/backend-index', function () {
+    return view('backend.index');
+})->name('backendindex');
+
+Route::get('/pages-blank', function () {
+    return view('backend.pages-blank');
+});
+
+Route::get('/pages-contact', function () {
+    return view('backend.pages-contact');
+});
+
+Route::get('/pages-error-404', function () {
+    return view('backend.pages-error-404');
+});
+
+Route::get('/pages-faq', function () {
+    return view('backend.pages-faq');
+});
+
+Route::get('/pages-login', function () {
+    return view('backend.pages-login');
+});
+
 
 Route::get('/charts-apexcharts', function () {
     return view('backend/charts-apexcharts');
@@ -37,14 +121,13 @@ Route::get('/components-carousel', function () {
     return view('backend/components-carousel');
 })->name('components.carousel');
 
-// ===================================================================
-=======
->>>>>>> Stashed changes
+
 
 Route::get('frontend-about', function () {
     return view('frontend/about');
 });
-<<<<<<< Updated upstream
+
+
 
 
 Route::get('frontend-category', function () {
@@ -70,6 +153,4 @@ Route::get('frontend-index', function () {
     return view('frontend/index');
 });
 
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+

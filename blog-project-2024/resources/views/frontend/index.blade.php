@@ -11,18 +11,18 @@
 
   <!-- Favicons -->
   <link href="{{asset('frontend/assets/img/favicon.png')}}" rel="icon">
-<<<<<<< Updated upstream
+
   <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
-=======
+ 
 <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
->>>>>>> Stashed changes
+
+  <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-<<<<<<< Updated upstream
   <!-- Vendor CSS Files -->
   <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
@@ -33,7 +33,7 @@
   <!-- Template Main CSS Files -->
   <link href="{{asset('frontend/assets/css/variables.css')}}" rel="stylesheet">
   <link href="{{asset('frontend/assets/css/main.css')}}" rel="stylesheet">
-=======
+
 <!-- Vendor CSS Files -->
 <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 <link href="{{asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
@@ -45,7 +45,7 @@
 <link href="{{asset('frontend/assets/css/variables.css')}}" rel="stylesheet">
 <link href="{{asset('frontend/assets/css/main.css')}}" rel="stylesheet">
 
->>>>>>> Stashed changes
+
 
   <!-- =======================================================
   * Template Name: ZenBlog
@@ -305,13 +305,10 @@
 
             <div class="d-lg-flex post-entry-2">
               <a href="single-post.html" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
-<<<<<<< Updated upstream
                 <img src="{{asset('frontend/assets/img/post-landscape-6.jpg')}}" alt="" class="img-fluid">
               </a>
-=======
               <img src="{{asset('frontend/assets/img/post-landscape-6.jpg')}}" alt="" class="img-fluid">
 
->>>>>>> Stashed changes
               <div>
                 <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                 <h3><a href="single-post.html">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</a></h3>
@@ -409,16 +406,13 @@
           <div class="col-md-9 order-md-2">
 
             <div class="d-lg-flex post-entry-2">
-<<<<<<< Updated upstream
               <a href="single-post.html" class="me-4 thumbnail d-inline-block mb-4 mb-lg-0">
                 <img src="{{asset('frontend/assets/img/post-landscape-3.jpg')}}" alt="" class="img-fluid">
               </a>
-=======
             <a href="single-post.html" class="me-4 thumbnail d-inline-block mb-4 mb-lg-0">
   <img src="{{asset('frontend/assets/img/post-landscape-3.jpg')}}" alt="" class="img-fluid">
 </a>
 
->>>>>>> Stashed changes
               <div>
                 <div class="post-meta"><span class="date">Business</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                 <h3><a href="single-post.html">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</a></h3>
@@ -713,7 +707,7 @@
               </li>
 
             </ul>
-=======
+
   <li>
     <a href="single-post.html" class="d-flex align-items-center">
       <img src="{{asset('frontend/assets/img/post-sq-1.jpg')}}" alt="" class="img-fluid me-3">
@@ -754,7 +748,6 @@
     </a>
   </li>
 </ul>
->>>>>>> Stashed changes
 
           </div>
         </div>
@@ -802,7 +795,7 @@
 
   <!-- Vendor JS Files -->
   <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<<<<<<< Updated upstream
+
   <script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
   <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
   <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
@@ -810,7 +803,7 @@
 
   <!-- Template Main JS File -->
   <script src="{{asset('frontend/assets/js/main.js')}}"></script>
-=======
+
 <script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
 <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
@@ -819,7 +812,7 @@
 <!-- Template Main JS File -->
 <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 
->>>>>>> Stashed changes
+
 
 </body>
 
