@@ -71,10 +71,10 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Blog</a></li>
-          <li><a href="single-post.html">Single Post</a></li>
+          <li><a href="{{route('frontend-single-post')}}">Single Post</a></li>
           <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="search-result.html">Search Result</a></li>
+              <li><a href="{{route('frontend-search')}}">Search Result</a></li>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
@@ -91,8 +91,8 @@
             </ul>
           </li>
 
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{{route('frontend-about')}}">About</a></li>
+          <li><a href="{{route('frontend-contact')}}">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
