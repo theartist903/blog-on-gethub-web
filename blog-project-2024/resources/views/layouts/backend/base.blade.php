@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,20 +8,20 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
     <title>Blog Website -  @yield('title') </title>
-    @include('layouts.site-css')
+    @include('layouts.backend.site-css')
 
     <title>
-        
+
     @yield('title')
 
 </title>
 
 </head>
 <body>
-    @include('layouts.header')
-    @include('layouts.aside')
+    @include('layouts.backend.header')
+    @include('layouts.backend.aside')
     @yield('content')
-    @include('layouts.footer')
-    @include('layouts.site-js')
+    @include('layouts.backend.footer')
+    @include('layouts.backend.site-js')
 </body>
 </html>
