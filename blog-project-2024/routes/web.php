@@ -54,7 +54,7 @@ Route::get('forms_layouts', function () {
 
 Route::get('/forms-validation', function () {
     return view('backend.forms-validation');
-});
+})->name('forms-validation');
 
 Route::get('/icons-bootstrap', function () {
     return view('backend.icons-bootstrap');
@@ -140,6 +140,11 @@ Route::get('frontend-contact', function () {
 
 Route::get('frontend-search', function () {
     return view('frontend/search');
+});
+
+
+Route::get('/base', function () {
+    return view('layouts.base');
 });
 
 

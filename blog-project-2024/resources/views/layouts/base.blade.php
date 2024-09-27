@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta content="" name="description">
     <meta content="" name="keywords">
+    <title>Blog Website -  @yield('title') </title>
     @include('layouts.site-css')
 
 </head>
