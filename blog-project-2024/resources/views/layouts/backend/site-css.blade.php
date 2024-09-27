@@ -23,4 +23,4 @@
  
 <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
-  <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+<link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
