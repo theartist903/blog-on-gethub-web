@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -153,4 +154,6 @@ Route::get('frontend-index', function () {
     return view('frontend/index');
 });
 
+Route::get('/category/index', [CategoryController::class, 'index'])->name('category.index');
+Route::post('/category/store', [CategoryController::class, 'store'])->name('category.store');
 
