@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta content="" name="description">
     <meta content="" name="keywords">
-    <title>Blog Website -  @yield('title') </title>
-    @include('layouts.backend.site-css')
+    @include('layouts.site-css')
 
     <title>
 
@@ -18,10 +16,10 @@
 
 </head>
 <body>
-    @include('layouts.backend.header')
-    @include('layouts.backend.aside')
+    @include('layouts.header')
+    @include('layouts.aside')
     @yield('content')
-    @include('layouts.backend.footer')
-    @include('layouts.backend.site-js')
+    @include('layouts.footer')
+    @include('layouts.site-js')
 </body>
 </html>
