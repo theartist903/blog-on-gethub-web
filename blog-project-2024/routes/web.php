@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DashboardController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', function () {
     return view('frontend/index');
@@ -154,6 +157,23 @@ Route::get('frontend-index', function () {
     return view('frontend/index');
 });
 
-Route::get('/category/index', [CategoryController::class, 'index'])->name('category.index');
-Route::post('/category/store', [CategoryController::class, 'store'])->name('category.store');
+//backend dashboard route
+Route::get('/backend/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+//category routes
+Route::get('/backend/category/index', [CategoryController::class, 'index'])->name('category.index');
+Route::post('/backend/category/store', [CategoryController::class, 'store'])->name('category.store');
+Route::get('/backend/category/edit/{category}', [CategoryController::class, 'edit'])->name('category.edit');
+Route::post('/backend/category/update', [CategoryController::class, 'update'])->name('category.update');
+Route::delete('/backend/category/{id}', [CategoryController::class, 'destroy'])->name('category.destroy');
+Route::get('/backend/category/status/{id}', [CategoryController::class, 'status'])->name('category.status');
+
+//post routes
+Route::get('/backend/post/index', [PostController::class, 'index'])->name('post.index');
+Route::post('/backend/post/store', [PostController::class, 'store'])->name('post.store');
+Route::get('/backend/post/edit/{post}', [PostController::class, 'edit'])->name('post.edit');
+Route::post('/backend/post/update', [PostController::class, 'update'])->name('post.update');
+Route::delete('/backend/post/{id}', [PostController::class, 'destroy'])->name('post.destroy');
+Route::get('/backend/post/status/{id}', [PostController::class, 'status'])->name('post.status');
+
+
 
