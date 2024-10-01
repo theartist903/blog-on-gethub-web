@@ -127,6 +127,7 @@ Route::get('/components-carousel', function () {
 
 
 
+
 Route::get('frontend-about', function () {
     return view('frontend/about');
 })->name('frontend-about');
@@ -177,3 +178,4 @@ Route::get('/backend/post/status/{id}', [PostController::class, 'status'])->name
 
 
 
+require __DIR__ . '/ubaid.php';

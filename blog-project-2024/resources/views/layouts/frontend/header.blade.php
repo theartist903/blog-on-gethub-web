@@ -11,9 +11,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Blog</a></li>
+          <li><a href="{{route('frontend-index')}}">Blog</a></li>
           <li><a href="{{route('frontend-single-post')}}">Single Post</a></li>
-          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="{{route('frontend-category')}}"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="{{route('frontend-search')}}">Search Result</a></li>
               <li><a href="#">Drop Down 1</a></li>
