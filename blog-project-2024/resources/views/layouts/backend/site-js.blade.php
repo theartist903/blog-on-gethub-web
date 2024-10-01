@@ -1,4 +1,6 @@
 <!-- Vendor JS Files -->
+{{-- <script src="{{ asset('backend/assets/js/jquery.js') }}"></script> --}}
+
 <script src="{{ asset('backend/assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
 <script src="{{ asset('backend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('backend/assets/vendor/chart.js/chart.umd.js') }}"></script>
