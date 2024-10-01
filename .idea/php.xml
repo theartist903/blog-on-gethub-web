@@ -118,6 +118,9 @@
       <path value="$PROJECT_DIR$/blog-project-2024/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/blog-project-2024/vendor/nette/schema" />
       <path value="$PROJECT_DIR$/blog-project-2024/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/blog-project-2024/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/blog-project-2024/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/blog-project-2024/vendor/psr/cache" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
