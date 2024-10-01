@@ -16,7 +16,8 @@ class Post extends Model
         'post_summary',
         'post_details',
         'feature_image',
-        'status'
+        'status',
+        'post_feature'
     ];
 
     /**
